@@ -7,7 +7,8 @@
 <meta name="description" content="An art-directable mesocyclone for Unreal Engine 5.8, solved on the game thread and rendered through the native Volumetric Cloud.">
 <meta property="og:title" content="Volumetric Super Storm">
 <meta property="og:description" content="An art-directable mesocyclone for Unreal Engine 5.8.">
-<meta property="og:image" content="assets/storm-hero.png">
+<meta property="og:image" content="https://teamgorogoro.github.io/Gorogoro.github.io/assets/storm-hero.png">
+<meta property="og:url" content="https://teamgorogoro.github.io/Gorogoro.github.io/">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/Icon128.png">
 <script src="./support.js"></script>
@@ -29,7 +30,7 @@
 </style>
 </helmet>
 
-<div style="display:flex; align-items:stretch; min-height:100vh; min-width:1481px; background:#0C0D0C; font-family:'Schibsted Grotesk',sans-serif;">
+<div style="display:flex; align-items:stretch; min-height:100vh; min-width:1140px; background:#0C0D0C; font-family:'Schibsted Grotesk',sans-serif;">
 
   <div style="box-sizing:border-box; width:253px; flex:0 0 253px; background:#0C0D0C; border-right:1px solid rgba(228,224,213,.14); position:sticky; top:0; height:100vh; display:flex; flex-direction:column; justify-content:space-between; padding:26px 20px 22px;">
     <div style="display:flex; flex-direction:column; gap:34px;">
@@ -46,7 +47,7 @@
     </div>
   </div>
 
-  <div style="flex:1; min-width:1228px;">
+  <div style="flex:1; min-width:887px;">
 
     <!-- ═════════ OVERVIEW ═════════ -->
     <sc-if value="{{ isOverview }}" hint-placeholder-val="{{ true }}">
@@ -63,12 +64,12 @@
           <span>Formation 13.0 s · dissolve 10.0 s</span>
         </div>
 
-        <div style="position:absolute; left:40px; right:40px; bottom:46px; display:flex; align-items:flex-end; justify-content:space-between; gap:60px;">
+        <div style="position:absolute; left:40px; right:40px; bottom:46px; display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:26px 60px;">
           <div style="font-family:'Big Shoulders Display',sans-serif; font-weight:800; font-size:172px; line-height:.79; letter-spacing:-.018em; text-transform:uppercase;">
             <div style="color:transparent; -webkit-text-stroke:1.4px rgba(228,224,213,.85);">Volumetric</div>
             <div style="color:#F1EDE2; text-shadow:0 16px 60px rgba(0,0,0,.5);">Super Storm</div>
           </div>
-          <div style="padding-bottom:14px; max-width:300px; display:flex; flex-direction:column; gap:14px;">
+          <div style="flex:0 0 300px; margin-left:auto; padding-bottom:14px; display:flex; flex-direction:column; gap:14px;">
               <p style="margin:0; font-size:15px; line-height:1.6; color:#C6C2B7;">One art-directable mesocyclone, solved on the game thread and rendered through Unreal's native cloud volume.</p>
             
             <a href="#get" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; border-bottom:1px solid #D8482F; padding-bottom:6px; color:#F1EDE2;">Get it on Fab →</a>
@@ -76,7 +77,7 @@
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:0 44px; padding:110px 40px 40px; border-bottom:1px solid rgba(228,224,213,.12);">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,300px); gap:0 44px; padding:110px 40px 40px; border-bottom:1px solid rgba(228,224,213,.12);">
         <div>
             <h2 style="margin:0 0 26px; font-family:'Big Shoulders Display',sans-serif; font-weight:800; font-size:88px; line-height:.88; letter-spacing:-.014em; text-transform:uppercase; max-width:780px;">A storm is a field you solve, bake and light — not a particle system.</h2>
             <p style="margin:0; max-width:660px; font-size:17px; line-height:1.66; color:#A9A79E; text-wrap:pretty;">The actor owns shape, motion, profile, flow-map and lightning state. A world subsystem owns the two shape targets, re-bakes them through compute only when the inputs actually change, and binds them onto the volumetric cloud material. The editor viewport ticks the same path, so what you tune is what you ship.</p>
@@ -101,7 +102,7 @@
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:0 44px; padding:80px 40px 100px; border-bottom:1px solid rgba(228,224,213,.12);">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,300px); gap:0 44px; padding:80px 40px 100px; border-bottom:1px solid rgba(228,224,213,.12);">
         <div style="display:flex; flex-direction:column; gap:30px;">
           <h3 style="margin:0; font-family:'Big Shoulders Display',sans-serif; font-weight:800; font-size:56px; line-height:.9; text-transform:uppercase; letter-spacing:-.01em;">Painted, not guessed</h3>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:26px;">
@@ -116,11 +117,11 @@
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:0 44px; padding:80px 40px 100px; border-bottom:1px solid rgba(228,224,213,.12);">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,300px); gap:0 44px; padding:80px 40px 100px; border-bottom:1px solid rgba(228,224,213,.12);">
         <div style="display:flex; flex-direction:column; gap:30px;">
-          <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:40px;">
-            <h3 style="margin:0; flex:1; font-family:'Big Shoulders Display',sans-serif; font-weight:800; font-size:56px; line-height:.9; text-transform:uppercase; letter-spacing:-.01em;">Presets that travel,<br>profiles that blend</h3>
-            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; line-height:2; letter-spacing:.1em; text-transform:uppercase; color:#6E706B; text-align:right; white-space:nowrap;">Apply Preset<br>Transition Target<br>Play Transition</div>
+          <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px 40px;">
+            <h3 style="margin:0; font-family:'Big Shoulders Display',sans-serif; font-weight:800; font-size:56px; line-height:.9; text-transform:uppercase; letter-spacing:-.01em;">Presets that travel,<br>profiles that blend</h3>
+            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; line-height:2; letter-spacing:.1em; text-transform:uppercase; color:#6E706B; text-align:right; margin-left:auto; white-space:nowrap;">Apply Preset<br>Transition Target<br>Play Transition</div>
           </div>
             <p style="margin:0; max-width:640px; font-size:16px; line-height:1.68; color:#A9A79E; text-wrap:pretty;">One preset asset holds the whole storm — shape and motion settings, formation and dissolve durations, the vertical profile and flow-map references, and the complete lightning sequence. Vertical profiles animate from one to another on an alpha you can drive, stop or read back.</p>
           
@@ -134,7 +135,7 @@
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:0 44px; padding:80px 40px 100px; border-bottom:1px solid rgba(228,224,213,.12);">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,300px); gap:0 44px; padding:80px 40px 100px; border-bottom:1px solid rgba(228,224,213,.12);">
         <div style="display:flex; flex-direction:column; gap:26px;">
           <h3 style="margin:0; font-family:'Big Shoulders Display',sans-serif; font-weight:800; font-size:56px; line-height:.9; text-transform:uppercase; letter-spacing:-.01em;">What ships</h3>
           <div style="font-family:'JetBrains Mono',monospace; font-size:13px;">
@@ -171,7 +172,7 @@
         <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:#6A6B62;">Documentation <span style="color:#14150F;">/ Savage Super Storm</span></div>
         <input onInput="{{ onDocSearch }}" placeholder="Filter pages" style="width:280px; padding:9px 12px; background:transparent; border:1px solid rgba(20,21,15,.16); color:#14150F; font-family:'JetBrains Mono',monospace; font-size:12px; outline:none;">
       </div>
-      <div style="display:grid; grid-template-columns:236px minmax(0,1fr) 232px;">
+      <div style="display:grid; grid-template-columns:236px minmax(0,1fr) minmax(0,232px);">
         <div ref="{{ ref_docNav }}" style="border-right:1px solid rgba(20,21,15,.16); padding:30px 26px 60px; position:sticky; top:0; align-self:start; max-height:100vh; overflow:auto;">
           <div data-doc-group style="margin-bottom:26px;">
             <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#6A6B62; padding-bottom:10px;">Getting started</div>
@@ -430,8 +431,7 @@
     <!-- ═════════ TEAM ═════════ -->
     <sc-if value="{{ isTeam }}" hint-placeholder-val="{{ false }}">
     <div data-screen-label="Team" style="color:#E4E0D5; min-height:100vh;">
-      <div style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:0 44px; padding:90px 40px 70px; border-bottom:1px solid rgba(228,224,213,.12);">
-        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#6E706B;">03</div>
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,300px); gap:0 44px; padding:90px 40px 70px; border-bottom:1px solid rgba(228,224,213,.12);">
         <div>
           <h1 style="margin:0 0 26px; font-family:'Big Shoulders Display',sans-serif; font-weight:800; font-size:132px; line-height:.82; letter-spacing:-.018em; text-transform:uppercase;">Team<br>GoroGoro</h1>
             <p style="margin:0; max-width:680px; font-size:18px; line-height:1.62; color:#A9A79E; text-wrap:pretty;">A small real-time volumetrics group. We build the storm we wanted to place in a level: one actor, live in the editor viewport, tuned by painting rather than by typing numbers into fields.</p>
@@ -440,8 +440,8 @@
         <div style="font-family:'JetBrains Mono',monospace; font-size:11px; line-height:1.9; color:#6E706B; border-top:1px solid rgba(228,224,213,.14); padding-top:12px;">Unreal Engine 5.8 · Substrate · Lumen<br>Perforce depot · three modules<br>Seoul</div>
       </div>
 
-      <div style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:0 44px; padding:60px 40px 80px; border-bottom:1px solid rgba(228,224,213,.12);">
-        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:22px;">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,300px); gap:0 44px; padding:60px 40px 80px; border-bottom:1px solid rgba(228,224,213,.12);">
+        <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px;">
           <div style="display:flex; flex-direction:column; gap:12px;">
             <div style="aspect-ratio:3/4; background:repeating-linear-gradient(122deg,#131414 0 14px,#171818 14px 28px); display:flex; align-items:flex-end; padding:14px;"><span style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.14em; color:#5E605C;">PORTRAIT</span></div>
             <div><div style="font-size:16px; font-weight:600;">Name</div><div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#6E706B; padding-top:4px;">Rendering / shaders</div></div>
@@ -462,10 +462,10 @@
         <div style="font-family:'JetBrains Mono',monospace; font-size:11px; line-height:1.85; color:#6E706B; border-top:1px solid rgba(228,224,213,.14); padding-top:12px;">Drop portraits and names in — placeholders are sized 3:4.</div>
       </div>
 
-      <div style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:0 44px; padding:60px 40px 90px;">
-        <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:40px;">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,300px); gap:0 44px; padding:60px 40px 90px;">
+        <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px 40px;">
           <h3 style="margin:0; font-family:'Big Shoulders Display',sans-serif; font-weight:800; font-size:72px; line-height:.86; text-transform:uppercase; letter-spacing:-.012em;">Work with us,<br>or just take the storm</h3>
-          <div style="display:flex; flex-direction:column; gap:12px; align-items:flex-end; white-space:nowrap;">
+          <div style="display:flex; flex-direction:column; gap:12px; align-items:flex-end; margin-left:auto; white-space:nowrap;">
             <a href="#get" style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; border-bottom:1px solid #D8482F; padding-bottom:7px;">Get it on Fab →</a>
             <a href="#get" style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:#A9A79E;">hello@teamgorogoro →</a>
           </div>
